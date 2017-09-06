@@ -48,7 +48,6 @@ class Game extends Component {
                 that.toggleGame();
             }
         }, 500)
-
     }
 
     checkWin = (blue, red) => {
@@ -69,15 +68,12 @@ class Game extends Component {
             }
             that.setState({ cards, flippedCards: [] })
         }, 500)
-
     }
-
 
     setAlert = (param) => {
         setTimeout(function () {
             alert(param)
         }, 500)
-
     }
 
     checkMatch(value, id) {
@@ -107,12 +103,9 @@ class Game extends Component {
                 this.setState({ bluePlayer, redPlayer });
             }
 
-
         } else if (redPlayer.activeTurn) {
-
             redPlayer.guessesValues.push(value)
             this.setState({ redPlayer })
-
             if (redPlayer.guessesValues.length === 2) {
 
                 if (redPlayer.guessesValues[0] === redPlayer.guessesValues[1]) {
@@ -131,8 +124,6 @@ class Game extends Component {
                 this.setState({ bluePlayer, redPlayer });
             }
         }
-
-
     }
 
     handleFlip = (id, value) => {
@@ -176,17 +167,14 @@ class Game extends Component {
         this.props.toggleGame()
     }
 
-    renderPlayerIcons = (...players) => {
-        
+    renderPlayerIcons = (...players) => {  
         return players.map((player, index) => {
             return (
                 <Player key={index}
                     img={player.img}
                     matches={player.matches}
                     name={player.name}
-
                 />
-
             )
         })
     }
@@ -195,9 +183,9 @@ class Game extends Component {
 
         return (
             <div className="container">
-                <Button waves='purple' onClick={this.toggleGame} className="margy blue lighten-2"> Quit Game </Button>
+                <Button waves='purple' onClick={this.toggleGame} className="margy white r-marg font-b backdropp"> Quit Game </Button>
                 {this.renderPlayerIcons(this.state.bluePlayer, this.state.redPlayer)}
-                <div className="row card paddy">
+                <div className="row card paddy backdropp">
                     {this.renderCards(this.state.cards)}
                 </div>
             </div>

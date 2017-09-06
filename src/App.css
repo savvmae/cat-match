@@ -2,10 +2,19 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 225px;
-  max-width: 20%
+  width: 17% !important;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 .margy {
   margin: 50px;
+}
+.margy-little {
+  margin: 10px !important;
+}
+
+.r-marg{
+  margin-right: 200px;
 }
 
 .icon {
@@ -19,9 +28,39 @@
 }
 
 .paddy {
-  padding: 10px 0px 40px 10px;
+  padding: 10px 0px 60px 20px;
 }
 
 .b-marg {
   margin-bottom: 10px;
+}
+
+.backdropp {
+  background: rgba(225, 225, 225, .7) !important 
+}
+.chippy {
+  display: inline-block;
+  height: 32px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 32px;
+  padding: 0 12px;
+  border-radius: 16px;
+  margin-bottom: 5px;
+  margin-right: 40px;
+  color: black;
+}
+
+.chippy img {
+  float: left;
+  margin: 0 8px 0 -12px;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  border: 0;
+}
+
+.font-b {
+  color: black
 }

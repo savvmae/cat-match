@@ -6,10 +6,10 @@ class Player extends Component {
     render() {
 
         return (
-            <Chip className="grey darken-3">
+            <div className="chippy white backdropp">
                 <img src={this.props.img} alt='Blue Player' />
                 {this.props.name} : {this.props.matches} matches
-		    </Chip>
+		    </div>
         );
     }
 }
