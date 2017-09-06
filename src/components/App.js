@@ -19,8 +19,13 @@ class App extends Component {
 
 
   render() {
+    const style = {
+      backgroundImage : "url('./bg.jpeg')",
+      backgroundSize : 'cover',
+      backgroundRepeat: 'no-repeat'
+    }
     return (
-      <div>
+      <div className="parallax-container hundo" style={style}>
         {this.state.isGameStarted
           ?
           <div>
@@ -29,7 +34,7 @@ class App extends Component {
           </div>
           :
           <div className="container margy">
-            <Button waves='light' onClick={this.toggleGame}> Start Game </Button>
+            <Button waves='purple' className="blue lighten-2" onClick={this.toggleGame}> Start Game </Button>
           </div>}
       </div>
     );

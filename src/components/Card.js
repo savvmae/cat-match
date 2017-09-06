@@ -17,9 +17,9 @@ class Card extends Component {
         return (
             <div className="margy">
                 {this.props.isFlipped ?
-                    <div className="col s4 kard" style={flippedStyle}>
+                    <div className="col s4 kard paddy b-marg" style={flippedStyle}>
                     </div> :
-                    <div onClick={this.handleClick} className="col s4 kard" style={unflippedStyle}>
+                    <div onClick={this.handleClick} className="col s4 kard paddy b-marg" style={unflippedStyle}>
                     </div>}
             </div>
         );

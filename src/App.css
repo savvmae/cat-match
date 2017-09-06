@@ -8,3 +8,20 @@
   margin: 50px;
 }
 
+.icon {
+  height: 64px;
+  width: 64px;
+  display: inline-block;
+}
+
+.hundo {
+  height: 100vh
+}
+
+.paddy {
+  padding: 10px 0px 40px 10px;
+}
+
+.b-marg {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,7 @@
+TODO
+
+1. add redux??
+2. finish game logic
+    - win/lose
+    - match count
+    -
